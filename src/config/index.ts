@@ -6,17 +6,17 @@ export const PRODUCT_CATEGORIES = [
         {
           name: 'Editor picks',
           href: `/products?category=ui_kits`,
-          imageSrc: '/nav/ui-kits/mixed.jpg',
+          imageSrc: '/P.png',
         },
         {
           name: 'New Arrivals',
           href: '/products?category=ui_kits&sort=desc',
-          imageSrc: '/nav/ui-kits/blue.jpg',
+          imageSrc: '/P.png',
         },
         {
           name: 'Bestsellers',
           href: '/products?category=ui_kits',
-          imageSrc: '/nav/ui-kits/purple.jpg',
+          imageSrc: '/P.png',
         },
       ],
     },
@@ -27,17 +27,17 @@ export const PRODUCT_CATEGORIES = [
         {
           name: 'Favorite Icon Picks',
           href: `/products?category=icons`,
-          imageSrc: '/nav/icons/picks.jpg',
+          imageSrc: '/P.png',
         },
         {
           name: 'New Arrivals',
           href: '/products?category=icons&sort=desc',
-          imageSrc: '/nav/icons/new.jpg',
+          imageSrc: '/P.png',
         },
         {
           name: 'Bestselling Icons',
           href: '/products?category=icons',
-          imageSrc: '/nav/icons/bestsellers.jpg',
+          imageSrc: '/P.png',
         },
       ],
     },
