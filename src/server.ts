@@ -4,7 +4,7 @@ import { nextApp, nextHandler } from './next-util';
 
 const app = express()
 
-const PORT = Number(process.env.port) || 3000
+const PORT = Number(process.env.PORT) || 3000
 
 const start = async() => {
 
@@ -20,13 +20,14 @@ const start = async() => {
     app.use((req, res) => { nextHandler(req, res)})
 
     nextApp.prepare().then(() => {
-        payload.logger.info("Next started")
+        //payload.logger.info("Next started")
     
 
     app.listen(PORT, async () => {
-        payload.logger.info(
-          'Next.js is building for production'
-        )})
+        //payload.logger.info(
+        //  'Next.js is building for production'
+        //)
+    })
 
     })
 }
