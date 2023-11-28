@@ -12,31 +12,12 @@ dotenv.config({
 
 export default buildConfig({
   serverURL: process.env.NEXT_PUBLIC_SERVER_URL || '',
-  collections: [
-    // Other collections...
-    {
-      slug: 'users',
-      labels: {
-        singular: 'User',
-        plural: 'Users',
-      },
-      access: {
-        read: () => true, // Define access control functions as per your requirements
-        create: () => true,
-        update: () => true,
-        delete: () => true,
-      },
-      fields: [
-        // Define fields for the 'users' collection
-        // Example: { name: 'username', label: 'Username', type: 'text' }
-      ],
-    },
-  ],
+  collections: [],
   routes: {
     admin: '/sell',
   },
   admin: {
-    user: 'users',
+    //user: 'users',
     bundler: webpackBundler(),
     meta: {
       titleSuffix: '- Marketplace',
